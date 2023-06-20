@@ -17,6 +17,10 @@ $yellow : #FD7900;
   src: url(./Fonts/Acrom-Bold.ttf);
 }
 
+.App {
+  overflow-x: hidden;
+}
+
 
 *{
   margin: 0;
@@ -380,6 +384,90 @@ $yellow : #FD7900;
     div {
       img {
         border-radius: 20px;
+      }
+    }
+  }
+}
+
+// Contact Start
+
+.samarqandContactSection {
+  margin-bottom: 120px;
+  .contactTitle {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    color: #000;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .samarqandContactContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    div {
+      form {
+        div {
+          input {
+            width: 330px;
+            height: 39px;
+            padding: 10px 200px 10px 20px;
+            background: #fff;
+            border: 1px solid #828282;
+            border-radius: 30px;
+            margin-bottom: 20px;
+          }
+          textarea {
+            width: 330px;
+            height: 130px;
+            padding: 10px 200px 10px 20px;
+            background: #fff;
+            border: 1px solid #828282;
+            border-radius: 30px;
+            margin-bottom: 20px;
+          }
+        }
+
+        button {
+          width: 131px;
+          height: 39px;
+          background: #FD7900;
+          border: 2px solid #FD7900;
+          border-radius: 40px;
+
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 19px;
+          text-transform: uppercase;
+          color: #fff;
+        }
+      }
+    }
+
+    .samarqandContactInfo {
+      div {
+        margin-bottom: 30px;
+        h2 {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 19px;
+          color: #060606;
+        }
+
+        p {
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 19px;
+          color: #060606;
+        }
+        a {
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 19px;
+          color: #060606;
+        }
       }
     }
   }
