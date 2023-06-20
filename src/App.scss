@@ -405,10 +405,10 @@ $yellow : #FD7900;
 
   .samarqandContactContent {
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     div {
       form {
+        margin-right: 30px;
         div {
           input {
             width: 330px;
@@ -471,4 +471,11 @@ $yellow : #FD7900;
       }
     }
   }
+}
+
+// Google Map
+
+.googleMap {
+  width: 100%;
+  height: 200px;
 }

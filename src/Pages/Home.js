@@ -6,6 +6,7 @@ import SamarqandInfo from '../Components/Smarqand/SamarqandInfo'
 import SamarqandPhotos from '../Components/Smarqand/SamarqandPhotos'
 import SamarqandAbout from '../Components/Smarqand/SamarqandAbout'
 import SamarqandContact from '../Components/Smarqand/SamarqandContact'
+import GoogleMap from './GoogleMap'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       {/* <SamarqandPhotos /> */}
       <SamarqandAbout />
       <SamarqandContact />
+      <GoogleMap />
     </section>
   )
 }
