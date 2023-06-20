@@ -104,7 +104,7 @@ export default function SamarqandContact() {
               {error.phone[0] && <p style={{ color: 'red' }}>{error.phone[1]}</p>}
 
               <div>
-                <textarea placeholder='Xabar'></textarea>
+                <textarea placeholder='Xabar' ></textarea>
               </div>
 
               <button className='contactBtn'>YUBORISH</button>
