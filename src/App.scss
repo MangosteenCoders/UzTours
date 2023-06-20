@@ -1,0 +1,386 @@
+@import '~bootstrap/scss/bootstrap';
+
+$yellow : #FD7900;
+
+@font-face {
+  font-family: "Acrom-Light";
+  src: url(./Fonts/Acrom-Light.ttf);
+}
+
+@font-face {
+  font-family: "Acrom-Regular";
+  src: url(./Fonts/Acrom-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Acrom-Bold";
+  src: url(./Fonts/Acrom-Bold.ttf);
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Acrom-Regular";
+
+  a{
+    text-decoration: none;
+  }
+
+  ul{
+    margin: 0;
+    padding: 0;
+    li{
+      list-style-type: none;
+    }
+  }
+}
+
+.container{
+  max-width: 1270px;
+}
+
+
+.Navbar{
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  padding: 30px 0;
+  .nav-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul{
+      align-items: center;
+      display: flex;
+      gap: 30px;
+
+      li{
+        a{
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 19px;
+          text-transform: uppercase;
+          color: #FFFFFF;
+        }
+      }
+    }
+
+    select{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      height: 39px;
+      border: 2px solid #FFFFFF;
+      border-radius: 40px;
+      background: none;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      color: #FFFFFF;
+    }
+
+  }
+}
+
+.Homehead{
+  margin-bottom: 120px;
+  .carusel{
+    .carusel-item{
+      img{
+        height: 90vh;
+        object-fit: cover;
+      }
+      .carusel-caption{
+        bottom: 37%;
+
+        h3{
+          font-family: "Acrom-Bold";
+          font-weight: 700;
+          font-size: 56px;
+          line-height: 67px;
+          text-transform: capitalize;
+          color: #FD7900;
+        }
+
+        p{
+          font-family: 'Acrom-Bold';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 28px;
+          line-height: 34px;
+        }
+      }
+    }
+  }
+}
+
+.ToursCards{
+  margin-bottom: 120px;
+  .row{
+    h2{
+      font-family: "Acrom-Bold";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 43px;
+      color: #060606;
+      margin-bottom: 40px;
+    }
+    .card{
+      background: #FFFFFF;
+      box-shadow: 0px 262px 105px rgba(0, 0, 0, 0.01), 0px 148px 89px rgba(0, 0, 0, 0.03), 0px 66px 66px rgba(0, 0, 0, 0.05), 0px 16px 36px rgba(0, 0, 0, 0.06), 0px 0px 0px rgba(0, 0, 0, 0.06);
+      border-radius: 20px;
+      .card-body{
+        .d-flex{
+          gap: 10px;
+          margin-bottom: 15px;
+          font-family: 'Acrom-Light';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          color: #060606;
+        }
+
+        h3{
+          font-style: normal;
+          font-weight: 700;
+          font-size: 28px;
+          line-height: 34px;
+          text-transform: capitalize;
+          color: #060606;
+          margin-bottom: 20px;
+        }
+
+        .price{
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          color: #060606;
+
+          span{
+            font-family: "Acrom-Bold";
+            font-weight: 600;
+          }
+        }
+
+        button{
+          display: flex;
+          background: none;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          padding: 14px 20px;
+          gap: 10px;
+          height: 39px;
+          border: 2px solid #FD7900;
+          border-radius: 40px;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 19px;
+          text-transform: uppercase;
+          color: #FD7900;
+        }
+      }
+    }
+  }
+}
+
+.TransportInfo{
+  margin-bottom: 120px;
+  .row{
+    // gap: 30px;
+    h2{
+      font-family: 'Acrom-Bold';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 43px;
+      color: #060606;
+      margin-bottom: 40px;
+    }
+    .p1{
+      padding-right: 15px;
+    }
+
+    .p2{
+      padding-left: 15px;
+
+      h3{
+        font-family: 'Acrom-Bold';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 34px;
+        text-transform: capitalize;
+        color: #060606;
+        margin-bottom: 40px;
+      }
+
+      p{
+        margin-bottom: 40px;
+      }
+    }
+
+    .card-body{
+      img{
+        width: 100%;
+      }
+
+      .salon-img{
+        margin-bottom: 40px;
+      }
+
+      p{
+        font-family: 'Acrom-Light';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #060606;
+      }
+    }
+  }
+}
+
+.TourInfo{
+  margin-bottom: 120px;
+  h3{
+    font-family: "Acrom-Bold";
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    color: #000000;
+    margin-bottom: 40px;
+  }
+
+  .row{
+    align-items: center;
+    
+    img{
+      width: 100%;
+    }
+
+    .card-info-body{
+      height: 100%;
+    }
+
+    .info-body{
+      height: 100%;
+      padding: 0px 30px;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .texts{
+        margin-bottom: 40px;
+      }
+
+      p{
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #060606;
+      }
+    }
+
+    .info-cards{
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+
+      .card{
+        padding: 15px 17px;
+        gap: 10px;
+        border: 1px solid #BDBDBD;
+        border-radius: 20px;
+
+        .card-body{
+          padding: 0;
+
+          span{
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: #060606;
+          }
+
+          .d-flex{
+            margin-bottom: 15px;
+            gap: 10px;
+            align-items: center;
+
+            img{
+              width: 22px;
+              height: 22px;
+            }
+
+            p{
+              margin: 0;
+              font-family: "Acrom-Bold";
+              font-style: normal;
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 19px;
+              color: #060606;
+            }
+          }
+        }
+      }
+    } 
+  }
+}
+
+// Samarqand About Start
+
+.samarqandAboutSection {
+  margin-bottom: 120px;
+  h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    color: #000;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .samarqandAboutContent {
+    align-items: center;
+    div {
+      p {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #060606;
+        margin-bottom: 54px;
+      }
+
+      a {
+        padding: 14px 20px;
+        width: 120px;
+        height: 39px;
+        border: 2px solid #FD7900;
+        border-radius: 40px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: uppercase;
+        color: #FD7900;
+      }
+    }
+    div {
+      img {
+        border-radius: 20px;
+      }
+    }
+  }
+}
