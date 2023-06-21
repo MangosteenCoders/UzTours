@@ -6,6 +6,7 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import Tours from './Pages/Tours';
 import Transport from './Pages/Transport';
+import SetCodes from './Pages/SetCodes';
 
 function App() {
   return (
@@ -16,7 +17,11 @@ function App() {
         <Route path='/about' element={<About/>}/>
         <Route path='/tours' element={<Tours/>}/>
         <Route path='/transport' element={<Transport/>}/>
+        <Route path='/aboutPage' element={<About/>}/>
+        <Route path='/buxoroMore' element={<About/>}/>
+        <Route path='/xorazmMore' element={<About/>}/>
       </Routes>
+      <SetCodes />
     </div>
   );
 }

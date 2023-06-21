@@ -175,7 +175,9 @@ $yellow : #FD7900;
           }
         }
 
-        button{
+        .moreBtn {
+          width: 120px;
+          height: 39px;
           display: flex;
           background: none;
           flex-direction: row;
@@ -183,7 +185,6 @@ $yellow : #FD7900;
           align-items: center;
           padding: 14px 20px;
           gap: 10px;
-          height: 39px;
           border: 2px solid #FD7900;
           border-radius: 40px;
           font-style: normal;
@@ -530,6 +531,46 @@ $yellow : #FD7900;
         }
       }
 
+    }
+  }
+}
+
+// About Start 
+
+.aboutSection {
+  padding: 100px 0;
+  .aboutTitle {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    color: #000;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .aboutContent {
+    .aboutInfo {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 50px;
+      h2 {
+        width: 519px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #060606;
+        margin-right: 30px;
+      }
+      img {
+        width: auto;
+        margin-right: 30px;
+        // width: 520px;
+        height: auto;
+        border-radius: 20px;
+        margin-bottom: 50px;
+      }
     }
   }
 }

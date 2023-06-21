@@ -3,6 +3,7 @@ import rectangle from '../../Images/cards-rectangle.svg'
 import img1 from '../../Images/cards-samarqand.png'
 import img2 from '../../Images/cards-buxoro.png'
 import img3 from '../../Images/cards-xorazim.png'
+import { Link } from 'react-router-dom'
 
 export default function ToursCards() {
   return (
@@ -44,7 +45,8 @@ export default function ToursCards() {
                   Narxi <span>570.000 so'm</span>
                 </p>
 
-                <button>batafsil</button>
+                <a className='moreBtn' href='/'>batafsil</a>
+
               </div>
             </div>
           </div>
@@ -81,8 +83,8 @@ export default function ToursCards() {
                 <p className="price">
                   Narxi <span>570.000 so'm</span>
                 </p>
-
-                <button>batafsil</button>
+                <Link className='moreBtn' to='/buxoroMore'>batafsil</Link>
+                {/* <button>batafsil</button> */}
               </div>
             </div>
           </div>
@@ -120,7 +122,8 @@ export default function ToursCards() {
                   Narxi <span>570.000 so'm</span>
                 </p>
 
-                <button>batafsil</button>
+                <Link className='moreBtn' to='/xorazmMore'>batafsil</Link>
+                {/* <button>batafsil</button> */}
               </div>
             </div>
           </div>

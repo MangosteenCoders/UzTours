@@ -85,6 +85,34 @@
       }
     }
   }
+
+    // About Start 
+
+  .aboutSection {
+    .aboutContent {
+      .aboutInfo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 50px;
+        h2 {
+          width: auto;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 19px;
+          color: #060606;
+          margin-right: 0px;
+        }
+        img {
+          width: 100% !important;
+          height: auto;
+          margin-right: 0px;
+          border-radius: 20px;
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 570px) {
@@ -137,4 +165,44 @@
       }
     }
   }
+}
+
+@media (max-width: 1125px) {
+  // About Start 
+
+.aboutSection {
+  .aboutTitle {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    color: #000;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .aboutContent {
+    .aboutInfo {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 50px;
+      h2 {
+        width: 519px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #060606;
+        margin-right: 0px;
+      }
+      img {
+        width: auto;
+        height: auto;
+        margin-right: 0px;
+        border-radius: 20px;
+        margin-bottom: 30px;
+        margin-top: 20px;
+      }
+    }
+  }
+}
 }
