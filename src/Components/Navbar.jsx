@@ -13,7 +13,7 @@ export default function Navbar() {
 
           <ul className="nav-list">
             <li><Link to="/">Bosh sahifa</Link></li>
-            <li><Link to="/tours">Turlar</Link></li>
+            <li><Link to='/tours'>Turlar</Link></li>
             <li><Link to="/about">Biz haqimizda</Link></li>
             <li><Link to="/transport">Transport</Link></li>
           </ul>
