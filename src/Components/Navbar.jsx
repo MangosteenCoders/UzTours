@@ -5,6 +5,18 @@ import logo from '../Images/logotip.svg'
 
 export default function Navbar() {
   const[navbar, setNavbar] = useState(false)
+  const [active, setActive] = useState("nav-list")
+  const [toglleIcon, setToggleIcon ] = useState("nav__toggler")
+
+  const navToggle  = () => {
+    active === "nav-list"
+     ? setActive("nav-list nav__active")
+     : setActive("nav-list")
+
+    toglleIcon === "nav__toggler"
+      ? setToggleIcon ("nav__toggler toggle")
+      : setToggleIcon("nav__toggler")
+  }
 
   const changeNavbar = () => {
     if (window.scrollY >= 50) {
@@ -22,11 +34,11 @@ window.addEventListener('scroll', changeNavbar);
             <img src={logo} alt="logo" />
           </Link>
 
-          <ul className="nav-list">
-            <li><Link to="/">Bosh sahifa</Link></li>
-            <li><Link to='/tours'>Turlar</Link></li>
-            <li><Link to="/about">Biz haqimizda</Link></li>
-            <li><Link to="/transport">Transport</Link></li>
+          <ul className={active}>
+            <li><Link onClick={navToggle} to="/">Bosh sahifa</Link></li>
+            <li><Link onClick={navToggle} to='/tours'>Turlar</Link></li>
+            <li><Link onClick={navToggle} to="/about">Biz haqimizda</Link></li>
+            <li><Link onClick={navToggle} to="/transport">Transport</Link></li>
           </ul>
 
           <select name="" id="">
@@ -34,6 +46,12 @@ window.addEventListener('scroll', changeNavbar);
             <option value="">русский</option>
             <option value="">english</option>
           </select>
+
+          <div onClick={navToggle} className={toglleIcon}>
+            <div className="line1"></div>
+            <div className="line2"></div>
+            <div className="line3"></div>
+          </div>
         </div>
       </div>  
     </nav>

@@ -76,6 +76,46 @@ $yellow : #FD7900;
       }
     }
 
+    .nav__toggler{
+      // display: flex;
+      display: none;
+      flex-direction: column;
+      align-items: flex-end;
+      z-index: 9;
+      cursor: pointer;
+      div{
+        width: 2rem;
+        height: 0.2rem;
+        margin: 0.2rem;
+        background: $yellow;
+        transition: 0.4s ease-in;
+      }
+      .line3{
+        width: 1.5rem;
+      }
+    }
+
+    .toggle{
+      div{
+        background: #FFFFFF !important;
+      }
+      .line1{
+        transform: rotate(-45deg) translate(-9px, 5px);
+        color: #FFFFFF !important;
+
+      }
+      .line2{
+        opacity: 0;
+      }
+      .line3{
+        transform: rotate(45deg) translate(-8px, -5px);
+
+        width: 2rem !important;
+        color: #FFFFFF !important;
+
+      }
+    }
+
     select{
       display: flex;
       flex-direction: row;
@@ -467,7 +507,7 @@ $yellow : #FD7900;
           input {
             width: 330px;
             height: 39px;
-            padding: 10px 200px 10px 20px;
+            padding: 10px  20px;
             background: #fff;
             border: 1px solid #828282;
             border-radius: 30px;
@@ -476,7 +516,7 @@ $yellow : #FD7900;
           textarea {
             width: 330px;
             min-height: 130px;
-            padding: 10px 200px 10px 20px;
+            padding: 10px 20px;
             background: #fff;
             border: 1px solid #828282;
             border-radius: 30px;
