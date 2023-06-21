@@ -46,11 +46,14 @@ $yellow : #FD7900;
 }
 
 
+
 .Navbar{
   width: 100%;
   position: fixed;
   z-index: 99;
   padding: 30px 0;
+  transition: 0.3s ease-in;
+
   .nav-body{
     display: flex;
     justify-content: space-between;
@@ -87,6 +90,56 @@ $yellow : #FD7900;
       font-size: 16px;
       line-height: 19px;
       color: #FFFFFF;
+      option{
+        color: #000;
+      }
+    }
+
+  }
+}
+
+.navbarActive{
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(5px);
+  border-radius: 0px 0px 30px 30px;
+  transition: 0.3s ease-in;
+
+  .nav-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul{
+      align-items: center;
+      display: flex;
+      gap: 30px;
+
+      li{
+        a{
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 19px;
+          text-transform: uppercase;
+          color: #000;
+        }
+      }
+    }
+
+    select{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      height: 39px;
+      border: 2px solid #000;
+      border-radius: 40px;
+      background: none;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      color: #000;
     }
 
   }
@@ -422,7 +475,7 @@ $yellow : #FD7900;
           }
           textarea {
             width: 330px;
-            height: 130px;
+            min-height: 130px;
             padding: 10px 200px 10px 20px;
             background: #fff;
             border: 1px solid #828282;
