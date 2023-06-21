@@ -7,6 +7,7 @@ import About from './Pages/About';
 import Tours from './Pages/Tours';
 import Transport from './Pages/Transport';
 import SetCodes from './Pages/SetCodes';
+import BuxoroHome from './Components/Buxoro/Home'
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         <Route path='/tours' element={<Tours/>}/>
         <Route path='/transport' element={<Transport/>}/>
         <Route path='/aboutPage' element={<About/>}/>
-        <Route path='/buxoroMore' element={<About/>}/>
+        <Route path='/buxoroMore' element={<BuxoroHome />}/>
         <Route path='/xorazmMore' element={<About/>}/>
       </Routes>
       <SetCodes />
