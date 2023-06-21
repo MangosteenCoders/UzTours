@@ -83,7 +83,7 @@ export default function ToursCards() {
                 <p className="price">
                   Narxi <span>570.000 so'm</span>
                 </p>
-                <Link className='moreBtn' to='/buxoroMore'>batafsil</Link>
+                <Link className='moreBtn' to='/buxoro-more'>batafsil</Link>
                 {/* <button>batafsil</button> */}
               </div>
             </div>
@@ -122,7 +122,7 @@ export default function ToursCards() {
                   Narxi <span>570.000 so'm</span>
                 </p>
 
-                <Link className='moreBtn' to='/xorazmMore'>batafsil</Link>
+                <Link className='moreBtn' to='/xorazm'>batafsil</Link>
                 {/* <button>batafsil</button> */}
               </div>
             </div>
