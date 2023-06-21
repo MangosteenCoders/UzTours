@@ -1,8 +1,8 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
-import img1 from '../../Images/buxoro.jpg'
-import img2 from '../../Images/xiva.jpg'
-import img3 from '../../Images/samarkand.jpg'
+import img1 from '../../Images/buxoro.png'
+import img2 from '../../Images/xorazm.png'
+import img3 from '../../Images/samarqand.png'
 
 export default function HomeHeader() {
   return (

@@ -19,7 +19,7 @@ function App() {
         <Route path='/tours' element={<Tours/>}/>
         <Route path='/transport' element={<Transport/>}/>
         <Route path='/aboutPage' element={<About/>}/>
-        <Route path='/buxoroMore' element={<BuxoroHome />}/>
+        <Route path='/buxoroMore' element={<BuxoroHome/>}/>
         <Route path='/xorazmMore' element={<About/>}/>
       </Routes>
       <SetCodes />
