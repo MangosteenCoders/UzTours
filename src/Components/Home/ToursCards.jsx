@@ -45,8 +45,7 @@ export default function ToursCards() {
                   Narxi <span>570.000 so'm</span>
                 </p>
 
-                <a className='moreBtn' href='/'>batafsil</a>
-
+                <Link className='moreBtn' to='/samarkand'>batafsil</Link>
               </div>
             </div>
           </div>
@@ -83,7 +82,7 @@ export default function ToursCards() {
                 <p className="price">
                   Narxi <span>570.000 so'm</span>
                 </p>
-                <Link className='moreBtn' to='/buxoro-more'>batafsil</Link>
+                <Link className='moreBtn' to='/bukhara'>batafsil</Link>
                 {/* <button>batafsil</button> */}
               </div>
             </div>
@@ -122,7 +121,7 @@ export default function ToursCards() {
                   Narxi <span>570.000 so'm</span>
                 </p>
 
-                <Link className='moreBtn' to='/xorazm'>batafsil</Link>
+                <Link className='moreBtn' to='/khiva'>batafsil</Link>
                 {/* <button>batafsil</button> */}
               </div>
             </div>
