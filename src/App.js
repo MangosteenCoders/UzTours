@@ -7,6 +7,7 @@ import About from './Pages/About';
 import Tours from './Pages/Tours';
 import Transport from './Pages/Transport';
 import SetCodes from './Pages/SetCodes';
+import SamarqandHome from './Components/Smarqand/SamarqandHome'
 import BuxoroHome from './Components/Buxoro/Home'
 import XorazmHome from './Components/Xiva/XivaHome'
 
@@ -20,8 +21,9 @@ function App() {
         <Route path='/tours' element={<Tours/>}/>
         <Route path='/transport' element={<Transport/>}/>
         <Route path='/aboutPage' element={<About/>}/>
-        <Route path='/buxoro-more' element={<BuxoroHome/>}/>
-        <Route path='/xorazm' element={<XorazmHome />}/>
+        <Route path='/samarkand' element={<SamarqandHome />}/>
+        <Route path='/bukhara' element={<BuxoroHome/>}/>
+        <Route path='/khiva' element={<XorazmHome />}/>
       </Routes>
       <SetCodes />
     </div>
