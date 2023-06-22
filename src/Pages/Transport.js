@@ -1,5 +1,6 @@
 import React from 'react'
 import TransImg from '../Images/transImg.png'
+import TransImg2 from '../Images/transImg2.png'
 
 export default function Transport() {
   return (
@@ -15,7 +16,7 @@ export default function Transport() {
           <div className='transInfo'>
             <h2>stariya hyundai</h2>
             <p>Lorem ipsum dolor sit amet consectetur. Magna congue orci lectus arcu amet fringilla. Ultricies amet et elit mauris id semper ullamcorper mauris. Ligula sollicitudin urna nec rhoncus sit egestas vestibulum sed. Velit aliquam sit consectetur turpis vulputate. Elementum vel cum placerat nunc consequat dignissim. Commodo lorem varius cras duis rhoncus quisque mi felis.</p>
-            <img src={TransImg} alt="..." />
+            <img src={TransImg2} alt="..." />
           </div>
         </div>
       </div>
